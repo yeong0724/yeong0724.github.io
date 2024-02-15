@@ -5,7 +5,7 @@ categories: [Coding, JavaScript]
 tags: [coding, JavaScript]
 ---
 
-![Currying Image](/assets/img/poat_img/currying.png){: width="350" class="normal"}
+![Currying Image](/assets/img/post_img/currying.png){: width="500" class="normal"}
 
 프로그래밍 언어가 가지고 있는 프로그래밍 패러다임 중, 각 언어만이 가지고 있는 고유한 프로그래밍 패러다임이 있다.
 
@@ -75,18 +75,20 @@ console.log(getTodoItems(todos)("id")); // [3, 2, 1]
 
 # 커링의 활용
 
-```javacript
+```javascript
 const log = _.curry((date, importance, message) => {
-  console.log(`[${date.getHours()}:${date.getMinutes()}] [${importance}] ${message}`);
-})
+  console.log(
+    `[${date.getHours()}:${date.getMinutes()}] [${importance}] ${message}`
+  );
+});
 
 // 1. 단계별로 커링함수를 분리
 const setLogLevel = log(new Date());
-const setLogMsg = setLogLevel("INFO")
-setLogMsg("흐림 / 10°C") // "[8:44] [INFO] 흐림 / 10°C"
+const setLogMsg = setLogLevel("INFO");
+setLogMsg("흐림 / 10°C"); // "[8:44] [INFO] 흐림 / 10°C"
 
 // 2. 커링함수를 한번에 호출
-log(new Date())("DEBUG")("맑음") // "[8:44] ["DEBUG"] 맑음
+log(new Date())("DEBUG")("맑음"); // "[8:44] ["DEBUG"] 맑음
 ```
 
 - 위의 코드처럼 단계별로 커링함수를 나누게 된다면, 단계별로 고정하고자 하는 인자는 고정하여 원하는 값을 도출할 수 있게 되어 debugging 도 용이해지는 효과를 볼 수 있다.
