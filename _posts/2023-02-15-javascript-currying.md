@@ -5,7 +5,7 @@ categories: [Coding, JavaScript]
 tags: [coding, JavaScript]
 ---
 
-![Currying Image](/assets/img/post_img/currying.png){: width="500" class="normal"}
+![Currying Image](/assets/img/post_img/coding/javascript/currying.png){: width="500" class="normal"}
 
 프로그래밍 언어가 가지고 있는 프로그래밍 패러다임 중, 각 언어만이 가지고 있는 고유한 프로그래밍 패러다임이 있다.
 
