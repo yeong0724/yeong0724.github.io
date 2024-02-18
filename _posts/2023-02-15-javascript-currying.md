@@ -1,7 +1,8 @@
 ---
 title: "[JavaScript] Currying 이란?"
 date: 2024-02-15 23:15:40 +0900
-author: "Jinyeong Kim"
+author:
+  name: "Jinyeong Kim"
 categories: [Coding, JavaScript]
 tags: [coding, JavaScript]
 ---
