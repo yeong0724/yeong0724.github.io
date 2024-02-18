@@ -2,6 +2,7 @@
 title: "[Spring] Transaction Propagation - (1)"
 date: 2024-02-18 01:20:30 +0900
 categories: [Coding, Spring]
+author: "Jinyeong Kim"
 tags: [Coding, Spring]
 ---
 
