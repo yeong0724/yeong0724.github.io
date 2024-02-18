@@ -1,9 +1,10 @@
 ---
 title: "[Spring] Transaction Propagation - (1)"
+author:
+  name: Jinyeong Kim
+  link: https://github.com/yeong0724
 date: 2024-02-18 01:20:30 +0900
 categories: [Coding, Spring]
-author:
-  name: "Jinyeong Kim"
 tags: [Coding, Spring]
 ---
 
