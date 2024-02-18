@@ -1,6 +1,6 @@
 ---
 title: "[Spring] Transaction Propagation - (2)"
-date: 2024-02-19 14:59:30 +0900
+date: 2024-02-18 14:59:30 +0900
 categories: [Coding, Spring]
 tags: [Coding, Spring]
 ---
