@@ -30,6 +30,8 @@ tags: [Coding, Spring]
 
 ## Transaction Propagation 예제
 
+---
+
 ![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_2.png){: width="500" .normal}
 
 ```Java
@@ -83,6 +85,8 @@ after transaction
   스프링은 여러 트랜잭션이 함께 사용되는 경우 처음 트랜잭션을 시작한 외부 트랜잭션이 실제 물리 트랜 잭션을 관리하도록 하여 트랜잭션 중복 커밋 문제를 해결한다
 
 ## Transaction Propagation 흐름
+
+---
 
 ![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_3.png){: width="500" .normal}
 
