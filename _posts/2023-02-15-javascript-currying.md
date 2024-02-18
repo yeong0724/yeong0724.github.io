@@ -1,6 +1,6 @@
 ---
 title: "[JavaScript] Currying 이란?"
-date: 2024-02-15 +0900
+date: 2024-02-15 23:15:40 +0900
 categories: [Coding, JavaScript]
 tags: [coding, JavaScript]
 ---
