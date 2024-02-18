@@ -1,8 +1,8 @@
 ---
 title: "[Spring] Transaction Propagation - (1)"
 date: 2024-02-18 01:20:30 +0900
-categories: [Coding, Spring]
-tags: [Coding, Spring]
+categories: [Spring, Transaction]
+tags: [Java, Spring]
 ---
 
 ## Transaction 기본
