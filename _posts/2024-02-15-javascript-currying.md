@@ -1,8 +1,8 @@
 ---
 title: "[JavaScript] Currying 이란?"
 date: 2024-02-15 23:15:40 +0900
-categories: [Coding, JavaScript]
-tags: [coding, JavaScript]
+categories: [JavaScript, Currying]
+tags: [JavaScript]
 ---
 
 ![Currying Image](/assets/img/post_img/coding/javascript/currying.png){: width="500" class="normal"}

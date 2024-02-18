@@ -2,7 +2,7 @@
 title: "[Spring] Transaction Propagation - (3)"
 date: 2024-02-18 15:44:30 +0900
 categories: [Coding, Spring]
-tags: [Coding, Spring]
+tags: [Java, Spring]
 ---
 
 ## Transaction Propagation - 내부 롤백
