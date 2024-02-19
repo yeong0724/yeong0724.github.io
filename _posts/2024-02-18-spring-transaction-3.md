@@ -94,3 +94,7 @@ transaction
 - 논리 트랜잭션이 하나라도 롤백되면 물리 트랜잭션은 롤백된다.
 - 내부 논리 트랜잭션이 롤백되면 롤백 전용 마크를 표시한다.
 - 외부 트랜잭션을 커밋할 때 롤백 전용 마크를 확인한다. 롤백 전용 마크가 표시되어 있으면 물리 트랜잭션을 롤백 하고, `UnexpectedRollbackException` 예외를 던진다.
+
+---
+
+**[출처]** [김영한 스프링 DB 2편 - 데이터 접근 활용기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)

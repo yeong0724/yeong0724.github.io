@@ -105,3 +105,7 @@ public class BasicTxTest {
    - 마찬가지로 전체 트랜잭션을 묶지 않고 각각 관리했기 때문에, 트랜잭션1에서 저장한 데이터는 커밋되고, 트랜잭션2에서 저 장한 데이터는 롤백된다.
 
 ![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_1_2.png){: width="500" .normal}
+
+---
+
+**[출처]** [김영한 스프링 DB 2편 - 데이터 접근 활용기술](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-db-2/dashboard)
