@@ -12,7 +12,7 @@ tags: [Java, Spring]
 
 ![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_4_1.png){: width="500" align="center"}
 
-```Java
+```java
 @Test
 void inner_rollback_requires_new() {
 	log.info("외부 트랜잭션 시작");

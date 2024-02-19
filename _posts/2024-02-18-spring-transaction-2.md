@@ -34,7 +34,7 @@ tags: [Java, Spring]
 
 ![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_2.png){: width="500" .normal}
 
-```Java
+```java
 @Test
 void inner_commit() {
 	log.info("외부 트랜잭션 시작");
