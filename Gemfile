@@ -4,9 +4,8 @@ source "https://rubygems.org"
 
 gemspec
 
-group :test, :jekyll_plugins do
+group :test do
   gem "html-proofer", "~> 4.4"
-  gem "jekyll-last-modified-at"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

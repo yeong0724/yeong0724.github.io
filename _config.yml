@@ -131,15 +131,15 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
-plugins:
-  - jekyll-last-modified-at
+# plugins:
+#   - jekyll-last-modified-at
 
-# Optional. The default date format, used if none is specified in the tag.
+# # Optional. The default date format, used if none is specified in the tag.
 
-last-modified-at:
-  date-format: "%d-%b-%y" #(like "04-Jan-14").
+# last-modified-at:
+#   date-format: "%d-%b-%y" #(like "04-Jan-14").
 
-# ------------ The following options are not recommended to be modified ------------------
+# # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
   syntax_highlighter: rouge
