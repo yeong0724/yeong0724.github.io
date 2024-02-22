@@ -1,6 +1,6 @@
 ---
 title: "[React] Router 6 버전 달라진점"
-date: 2024-02-22 14:22:30 +0900
+date: 2024-02-22 12:22:30 +0900
 categories: [JavaScript, React]
 tags: [JavaScript, React]
 ---
