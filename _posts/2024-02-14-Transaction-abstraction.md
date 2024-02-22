@@ -11,7 +11,7 @@ tags: [Java, Spring]
 
 여러가지 애플리케이션 구조가 있지만, 가장 단순하면서 많이 사용하는 방법은 역할에 따라 아래 그림과 같이 3가지 계층으로 나누는 구조이다.
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_1.JPG){: align="center"}
+![Currying Image](/assets/img/post_img/coding/spring/transaction_1.JPG){: width="600" align="center"}
 
 - 여기서 가장 중요한 곳은 어디일까? 바로 핵심 비즈니스 로직이 들어있는 서비스 계층이다. 시간이 흘러서 UI(웹) 와 관련된 부분이 변하고, 데이터 저장 기술을 다른 기술로 변경해도, 비즈니스 로직은 최대한 변경없이 유지되어야 한다.
 - 비즈니스 로직의 순수성을 유지하기 위해서는 최대한 특정 기술 구현에 종속적이지 않게 개발해야 한다.
