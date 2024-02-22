@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-group :test :jekyll_plugins do
+group :test, :jekyll_plugins do
   gem "html-proofer", "~> 4.4"
   gem "jekyll-last-modified-at"
 end
