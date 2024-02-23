@@ -84,4 +84,35 @@ public class MemberServiceVer1 {
 
 ## Transaction의 추상화
 
-앞서말한
+앞서 구현한 서비스 계층은 트랜잭션을 사용하기 위해 JDBC 기술에 의존하고 있기 때문에 JDBC -> JPA 로 데이터 접근 기술을 변경하게 되면 서비스 계층의 트랜잭션 관련 코드는 전면 수정되어야 할 것이다.
+
+#### 데이터 접근 기술에 따른 트랜잭션 사용법
+- JDBC: connection.setAutoCommit(false)
+- JAP: transaction.begin();
+- 두 기술 뿐만이 아니라 향후 어떤 기술도 사용법이 서로 다를 것이다.
+
+![transaction_2.JPG](/assets/img/post_img/coding/spring/transaction_2.JPG){: width="600" align="center"}
+
+#### 트랜잭션 추상화 인터페이스
+이런 서비스계층의 의존문제를 해결하려면 트랜잭션 기능을 추상화하면 된다.
+```java
+public interface TransactionManager {
+	begin();
+	commit();
+	rollback();
+}
+```
+트랜잭션을 단순하게 생각하자면, 트랜잭션을 시작하고 비즈니스 로직의 수행이 끝나면 커밋하거나 롤백하면 된다.
+해당 인터페이스를 기반으로 각각의 데이터 접근 기술에 맞는 구현체를 만들기만 하면 될 것이다.
+- JdbcTransactionManager : JDBC 트랜잭션 기능을 제공하는 구현체
+- JpaTransactionManager: JPA 트랜잭션 기능을 제공하는 구현체
+
+
+
+![transaction_3.JPG](/assets/img/post_img/coding/spring/transaction_3.JPG){: width="600" align="center"}
+
+- 서비스는 특정 트랜잭션 기술에 직접 의존하는 것이 아니라 TransactionManager 라는 추상화된 인터페이스에 의존한다. 이제 개발 상황에 맞게 원하는 트랜잭션 매니저 구현체를 DI 를 통해 주입하면 된다.
+
+#### 스프링의 트랜잭션 추상화
+사실 스프링은 이미 이런 상황에 대해 고미한고 대비 해두었기 때문에 스프링이 제공하는 트랜잭션 추상화 기술을 사용하면 된다. 심지어 데이터 접근 기술에 따라 트랜잭션 구현체도 대부분 만들어두었다.
+
