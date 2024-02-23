@@ -1,7 +1,7 @@
 ---
-title: "[React] Rendering 최적화 방법"
+title: "리액트 컴포넌트 렌더링 최적화 방법"
 date: 2024-02-22 13:52:00 +0900
-categories: [JavaScript, React]
+categories: [Frontend, React]
 tags: [JavaScript, React]
 ---
 

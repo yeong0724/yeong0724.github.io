@@ -1,7 +1,7 @@
 ---
-title: "[React] 리액트에서 사용해보는 Code Splitting "
+title: "리액트에서 사용해보는 Code Splitting "
 date: 2024-02-22 16:14:10 +0900
-categories: [JavaScript, React]
+categories: [Frontend, React]
 tags: [JavaScript, React]
 ---
 
@@ -44,7 +44,8 @@ notify();
 }
 
 export default App;
-```
+
+````
 
 - onClick 함수를 누르기도 전에 notify 함수 코드가 로드 되기 때문에, 아직 사용 하지도 않은 notify 함수 코드를 불러오는 상황이다.
 
@@ -69,7 +70,7 @@ function App() {
 }
 
 export default App;
-```
+````
 
 - 이처럼 Promise 를 반환하게끔 코드를 수정한다면 실제 onClick 함수가 동작할 때 notify 파일을 불러오게 된다.
 - 실제로 빌드시에 static 폴더에 확인해보면 `notify` 파일에 대한 코드가 따로 생성 됐음을 확인 할 수 있다.

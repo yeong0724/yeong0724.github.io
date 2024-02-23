@@ -1,7 +1,7 @@
 ---
-title: "[React] Router 6 버전 달라진점"
+title: "Router 6 버전 달라진점"
 date: 2024-02-22 12:22:30 +0900
-categories: [JavaScript, React]
+categories: [Frontend, React]
 tags: [JavaScript, React]
 ---
 

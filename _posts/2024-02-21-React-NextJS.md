@@ -1,7 +1,7 @@
 ---
-title: "[React] NextJS 13 / 14 version 특이점"
+title: "NextJS 13 / 14 version 특이점"
 date: 2024-02-21 15:30:30 +0900
-categories: [JavaScript, React]
+categories: [Frontend, React]
 tags: [JavaScript, React]
 ---
 

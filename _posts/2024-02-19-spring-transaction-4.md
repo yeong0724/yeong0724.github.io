@@ -1,5 +1,5 @@
 ---
-title: "[Spring] Transaction Propagation - (4)"
+title: "트랜잭션 전파(Transaction Propagation)란 무엇일까? - (4)"
 date: 2024-02-19 20:20:30 +0900
 categories: [Spring, Transaction]
 tags: [Java, Spring]
@@ -10,7 +10,7 @@ tags: [Java, Spring]
 스프링에는 외부 트랜잭션과 내부 트랜잭션을 완전히 분리해서 사용하기 위한 옵션이 존재한다. 외부 트랜잭션과 내부 트랜잭션을 완전히 분리해서 각각 별도의 물리 트랜잭션을 사용하는 방법으로 (commit / rollback) 이 각각 별도로 이루어지게 된다.
 이 옵션은 내부 트랜잭션에 문제가 발생해서 롤백해도, 외부 트랜잭션에는 영향을 주지 않는다. 반대로 외부 트랜잭션에 문제가 발생해도 내부 트랜잭션에 영향을 주지 않는다.
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_4_1.png){: width="500" align="center"}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_4_1.png){: width="500" align="center"}
 
 ```java
 @Test
@@ -77,7 +77,7 @@ Resuming suspended transaction after completion of inner transaction
 
 ## **요청 흐름 - REQUIRES_NEW**
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_4_2.png){: width="500" align="center"}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_4_2.png){: width="500" align="center"}
 
 1. `txManager.getTransaction()` 를 호출해서 외부 트랜잭션을 시작한다.
 2. 트랜잭션 매니저는 데이터소스를 통해 커넥션을 생성한다.
@@ -102,7 +102,7 @@ Resuming suspended transaction after completion of inner transaction
 
 ## **응답 흐름 - REQUIRES_NEW**
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_4_3.png){: width="500" align="center"}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_4_3.png){: width="500" align="center"}
 
 1. 로직2가 끝나고 트랜잭션 매니저를 통해 내부 트랜잭션을 롤백
 2. 트랜잭션 매니저는 롤백 시점에 신규 트랜잭션 여부에 따라 다르게 동작한다.

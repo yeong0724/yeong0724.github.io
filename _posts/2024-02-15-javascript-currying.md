@@ -1,11 +1,11 @@
 ---
-title: "[JavaScript] Currying 이란?"
+title: "Currying 이란?"
 date: 2024-02-15 23:15:40 +0900
-categories: [JavaScript, Reference]
+categories: [Frontend, JavaScript]
 tags: [JavaScript]
 ---
 
-![Currying Image](/assets/img/post_img/coding/javascript/currying.png){: width="500" class="normal"}
+![Currying Image](/assets/img/post_img/coding/javascript/currying.png){: width="500" align="center"}
 
 프로그래밍 언어가 가지고 있는 프로그래밍 패러다임 중, 각 언어만이 가지고 있는 고유한 프로그래밍 패러다임이 있다.
 

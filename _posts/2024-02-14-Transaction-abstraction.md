@@ -1,5 +1,5 @@
 ---
-title: "[Spring] Transaction 추상화 & 동기화"
+title: "트랜잭션 추상화와 동기화를 통한 간편한 트랜잭션 적용"
 date: 2024-02-14 21:10:30 +0900
 categories: [Spring, Transaction]
 tags: [Java, Spring]
@@ -11,7 +11,7 @@ tags: [Java, Spring]
 
 여러가지 애플리케이션 구조가 있지만, 가장 단순하면서 많이 사용하는 방법은 역할에 따라 아래 그림과 같이 3가지 계층으로 나누는 구조이다.
 
-![transaction_1](/assets/img/post_img/coding/spring/transaction_1.JPG){: width="600" align="center"}
+![transaction_1](/assets/img/post_img/coding/spring/transaction/transaction_1.JPG){: width="600" align="center"}
 
 <center>[그림. 1] Application 의 구조</center>
 
@@ -94,7 +94,7 @@ public class MemberServiceVer1 {
 - JAP: transaction.begin();
 - 두 기술 뿐만이 아니라 향후 어떤 기술도 사용법이 서로 다를 것이다.
 
-![transaction_2.JPG](/assets/img/post_img/coding/spring/transaction_2.JPG){: width="600" align="center"}
+![transaction_2.JPG](/assets/img/post_img/coding/spring/transaction/transaction_2.JPG){: width="600" align="center"}
 
 <center>[그림. 2] 데이터 접근 기술의 변경</center>
 
@@ -116,7 +116,7 @@ public interface TransactionManager {
 - JdbcTransactionManager : JDBC 트랜잭션 기능을 제공하는 구현체
 - JpaTransactionManager: JPA 트랜잭션 기능을 제공하는 구현체
 
-![transaction_3.JPG](/assets/img/post_img/coding/spring/transaction_3.JPG){: width="600" align="center"}
+![transaction_3.JPG](/assets/img/post_img/coding/spring/transaction/transaction_3.JPG){: width="600" align="center"}
 
 <center>[그림. 3] 트랜잭션 추상화와 의존관계</center>
 
@@ -126,7 +126,7 @@ public interface TransactionManager {
 
 사실 스프링은 이미 이런 상황에 대해 고미한고 대비 해두었기 때문에 스프링이 제공하는 트랜잭션 추상화 기술을 사용하면 된다. 심지어 데이터 접근 기술에 따라 트랜잭션 구현체도 대부분 만들어두었다.
 
-![transaction_4.JPG](/assets/img/post_img/coding/spring/transaction_4.png){: width="600" align="center"}
+![transaction_4.JPG](/assets/img/post_img/coding/spring/transaction/transaction_4.png){: width="600" align="center"}
 
 <center>[그림.4] Connection & Session</center>
 
@@ -167,13 +167,13 @@ public interface PlatformTransactionManager extends TransactionManager {
 트랜잭션 추상화는 앞서 설명하였고, 리소스 동기화에 대해 얘기 하자면 트랜잭션을 유지하려면 트랜잭션의 시작부터 끝까지 같은 DB Connection 을 유지해야한다. 결국 같은 커넥션을 동기화 하기 위해서 파라미터를 통해 Repository 로 Connection 을 전달하는 방법을 사용하였다.
 이러한 방식은 커넥션을 전달하기 위해 코드가 지저분해지고, 중복된 코드를 작성하게 되는 문제가 발생한다.
 
-![transaction_5.JPG](/assets/img/post_img/coding/spring/transaction_5.png){: width="600" align="center"}
+![transaction_5.JPG](/assets/img/post_img/coding/spring/transaction/transaction_5.png){: width="600" align="center"}
 
 <center>[그림. 5] Connection & Session</center>
 
 <br />
 
-![transaction_6.JPG](/assets/img/post_img/coding/spring/transaction_6.png){: width="600" align="center"}
+![transaction_6.JPG](/assets/img/post_img/coding/spring/transaction/transaction_6.png){: width="600" align="center"}
 
 <center>[그림. 6] 트랜잭션 매니저와 트랜잭션 동기화 매니저</center>
 

@@ -1,5 +1,5 @@
 ---
-title: "[Spring] Transaction Propagation - (3)"
+title: "트랜잭션 전파(Transaction Propagation)란 무엇일까? - (3)"
 date: 2024-02-18 15:44:30 +0900
 categories: [Spring, Transaction]
 tags: [Java, Spring]
@@ -27,7 +27,7 @@ void inner_rollback() {
 }
 ```
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_3_1.png){: width="500" align="center"}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_3_1.png){: width="500" align="center"}
 
 ```txt
 # 실행 결과 - inner_rollback()
@@ -71,7 +71,7 @@ transaction
 
 ---
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_3_2.png){: width="500" align="center"}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_3_2.png){: width="500" align="center"}
 
 1. 로직2가 끝나고 트랜잭션 매니저를 통해 내부 트랜잭션을 롤백
 2. 트랜잭션 매니저는 롤백 시점에 신규 트랜잭션 여부에 따라 다르게 동작한다. 이 경우 신규 트랜잭션이 아니기 때문에 실제 롤백을 호출하지 않는다.

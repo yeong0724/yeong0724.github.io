@@ -1,5 +1,5 @@
 ---
-title: "[Spring] Transaction Propagation - (2)"
+title: "트랜잭션 전파(Transaction Propagation)란 무엇일까? - (2)"
 date: 2024-02-18 14:59:30 +0900
 categories: [Spring, Transaction]
 tags: [Java, Spring]
@@ -12,7 +12,7 @@ tags: [Java, Spring]
 트랜잭션을 각각 사용하는 것이 아니라, 트랜잭션이 이미 진행중인데, 여기에 추가로 트랜잭션을 수행하면 어떻게 될까?
 기존 트랜잭션과 별도의 트랜잭션을 진행해야 할지, 아니면 기존 트랜잭션을 그대로 이어 받아서 트랜잭션을 수행해야 할지를 결정하는 것을 트랜잭션 전파(**propagation**) 이라고 한다.
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_1.png){: width="500" .normal}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_2_1.png){: width="500" align="center"}
 
 - 논리 트랜잭션들은 하나의 물리 트랜잭션으로 묶이는데, 물리 트랜잭션은 우리가 이해하는 실제 데이터베이스에 적용되는 트랜잭션을 뜻한다. 실제 커넥션을 통해서 트랜 잭션을 시작( `setAutoCommit(false))` 하고, 실제 커넥션을 통해서 커밋, 롤백하는 단위이다.
 
@@ -32,7 +32,7 @@ tags: [Java, Spring]
 
 ---
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_2.png){: width="500" .normal}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_2_2.png){: width="500" align="center"}
 
 ```java
 @Test
@@ -88,9 +88,9 @@ after transaction
 
 ---
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_3.png){: width="500" .normal}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_2_3.png){: width="500" align="center"}
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_2_4.png){: width="500" .normal}
+![Currying Image](/assets/img/post_img/coding/spring/transaction/transaction_propagation_2_4.png){: width="500" align="center"}
 
 1. `txManager.getTransaction()` 를 호출해서 외부 트랜잭션을 시작한다.
 2. 트랜잭션 매니저는 데이터소스를 통해 커넥션을 생성한다.

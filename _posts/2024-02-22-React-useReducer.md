@@ -1,7 +1,7 @@
 ---
-title: "[React] useReducer의 활용"
+title: "useReducer hook의 활용"
 date: 2024-02-22 12:22:30 +0900
-categories: [JavaScript, React]
+categories: [Frontend, React]
 tags: [JavaScript, React]
 ---
 

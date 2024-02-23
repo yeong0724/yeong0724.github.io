@@ -1,5 +1,5 @@
 ---
-title: "[Spring] Transaction Propagation - (1)"
+title: "트랜잭션 전파(Transaction Propagation)란 무엇일까? - (1)"
 date: 2024-02-18 01:20:30 +0900
 categories: [Spring, Transaction]
 tags: [Java, Spring]
@@ -99,12 +99,12 @@ public class BasicTxTest {
    - 히카리 커넥션 풀에서 커넥션을 획득하면 실제 커넥션을 그대로 반환하는 것이 아니라 내부 관리를 위해 히카리 프록시 커넥션이라는 객체를 생성해서 반환한다. 물론 내부에는 실제 커넥션이 포함되어 있기 때문에 이 객체의 주소를 확인하면 커넥 션 풀에서 획득한 커넥션을 구분 할 수 있다.
    - 트랜잭션이 각각 수행되면서 사용되는 DB 커넥션도 각각 다른다.
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_1_1.png){: width="500" .normal}
+![transaction_propagation_1_1](/assets/img/post_img/coding/spring/transaction/transaction_propagation_1_1.png){: width="500" align="center"}
 
 3. double_commit_rollback()
    - 마찬가지로 전체 트랜잭션을 묶지 않고 각각 관리했기 때문에, 트랜잭션1에서 저장한 데이터는 커밋되고, 트랜잭션2에서 저 장한 데이터는 롤백된다.
 
-![Currying Image](/assets/img/post_img/coding/spring/transaction_propagation_1_2.png){: width="500" .normal}
+![transaction_propagation_1_1](/assets/img/post_img/coding/spring/transaction/transaction_propagation_1_2.png){: width="500" align="center"}
 
 ---
 
