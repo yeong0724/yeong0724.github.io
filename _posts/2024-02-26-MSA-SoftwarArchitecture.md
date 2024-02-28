@@ -1,7 +1,7 @@
 ---
 title: "MSA 와 Software Architecture 의 관계"
 date: 2024-02-26 14:54:30 +0900
-categories: [MSA, Architecture]
+categories: [Architecture, MSA]
 tags: [MSA, Project, spring]
 ---
 
