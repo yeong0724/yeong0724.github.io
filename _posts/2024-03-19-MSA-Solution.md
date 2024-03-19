@@ -1,6 +1,6 @@
 ---
 title: "Sequence Diagram 에 대해서 배우고 작성해보기"
-date: 2024-03-219 21:58:30 +0900
+date: 2024-03-19 21:58:30 +0900
 categories: [Architecture, MSA]
 tags: [MSA, Project, spring]
 ---
