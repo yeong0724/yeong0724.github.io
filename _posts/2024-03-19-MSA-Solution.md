@@ -1,5 +1,5 @@
 ---
-title: "Sequence Diagram 에 대해서 배우고 작성해보기"
+title: "IPC 통신 - MSA 전환으로 인해 발생하는 문제, 그리고 개선하기 위한 방안"
 date: 2024-03-19 21:58:30 +0900
 categories: [Architecture, MSA]
 tags: [MSA, Project, spring]
