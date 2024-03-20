@@ -25,7 +25,7 @@ axios 에서는 두 가지 유형의 interceptor 를 제공한다.
 
 예를 들어, 서버로부터 받은 데이터를 특정 형식으로 변환하거나 오류 상태 코드에 따라 적절한 처리를 수행하는 등의 작업을 응답 인터셉터를 사용하여 할 수 있다.
 
-![interceptor.png](/assets/img/post_img/coding/react/interceptor.png){: width="500" align="center"}
+![interceptor.png](/assets/img/post_img/coding/react/interceptor.png){: width="600px" align="center"}
 
 <center>출처: https://medium.com/@barisberkemalkoc/axios-interceptor-intelligent-db46653b7303</center>
 
