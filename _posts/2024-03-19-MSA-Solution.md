@@ -11,17 +11,17 @@ tags: [MSA, Project, spring]
 
 ### 1. 요청에 대한 처리량(throughput)이 급격히 하락
 
-    - 각 서비스의 정확히 필요한 컴퓨팅 리소스 파악 어려워진다.
-    - 즉 필요한 컴퓨팅 자원의 최적화가 어려워 성능 하락의 가능성이 생긴다.
+- 각 서비스의 정확히 필요한 컴퓨팅 리소스 파악 어려워진다.
+- 즉 필요한 컴퓨팅 자원의 최적화가 어려워 성능 하락의 가능성이 생긴다.
 
 <br />
 
 ### 2. http, gRPC 프로토콜 상의 이슈로 디버깅이 어렵다.
 
-    - Connection Pool 관리
-    - Monolithic 환경에 비해 한정된 리소스로 JVM 최적화가 더 어려워진다.
-    - 추가로 http, gRPC 프로토콜에 디펜던시가 있는 지식이 필요하다.
-    - Connection Timeout, tcp-3handshake, gRPC code ...
+- Connection Pool 관리
+- Monolithic 환경에 비해 한정된 리소스로 JVM 최적화가 더 어려워진다.
+- 추가로 http, gRPC 프로토콜에 디펜던시가 있는 지식이 필요하다.
+- Connection Timeout, tcp-3handshake, gRPC code ...
 
 <br />
 
@@ -31,12 +31,12 @@ tags: [MSA, Project, spring]
 
 ### 1. 모니터링 방식의 고도화
 
-    - Monolithic 환경에 비해 많이 어려워진 디버깅과 트러블슈팅
-    - 서비스간 호출 상태
-    - Latency 증감 확인
-    - Call 증감 확인
-    - Async 방식에 대한 모니터링 (ex. Kafka)
-    - 다양한 Business Metrix
+- Monolithic 환경에 비해 많이 어려워진 디버깅과 트러블슈팅
+- 서비스간 호출 상태
+- Latency 증감 확인
+- Call 증감 확인
+- Async 방식에 대한 모니터링 (ex. Kafka)
+- 다양한 Business Metrix
 
 ### 2. 로그 수집을 위한 별도의 인프라 필요 및 관리의 필요성 (ex. DevOps Team)
 
@@ -121,6 +121,7 @@ tags: [MSA, Project, spring]
 > Jaeger, Zipkin, Tempo
 
 ![msa_problem_4.png](/assets/img/post_img/coding/architecture/msa_problem_4.png){: width="500" align="center"}
+
 출처: [https://www.jaegertracing.io/]
 
 <br />
