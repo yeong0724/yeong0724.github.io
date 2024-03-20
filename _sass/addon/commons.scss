@@ -3,22 +3,22 @@
 html {
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
-    &[data-mode='light'] {
+    &[data-mode="light"] {
       @include light-scheme;
     }
 
-    &[data-mode='dark'] {
+    &[data-mode="dark"] {
       @include dark-scheme;
     }
   }
 
   @media (prefers-color-scheme: dark) {
     &:not([data-mode]),
-    &[data-mode='dark'] {
+    &[data-mode="dark"] {
       @include dark-scheme;
     }
 
-    &[data-mode='light'] {
+    &[data-mode="light"] {
       @include light-scheme;
     }
   }
@@ -88,7 +88,7 @@ blockquote {
     margin-bottom: 0;
   }
 
-  &[class^='prompt-'] {
+  &[class^="prompt-"] {
     border-left: 0;
     position: relative;
     padding: 1rem 1rem 1rem 3rem;
@@ -107,10 +107,10 @@ blockquote {
     }
   }
 
-  @include prompt('tip', '\f0eb', 'regular');
-  @include prompt('info', '\f06a');
-  @include prompt('warning', '\f06a');
-  @include prompt('danger', '\f071');
+  @include prompt("tip", "\f0eb", "regular");
+  @include prompt("info", "\f06a");
+  @include prompt("warning", "\f06a");
+  @include prompt("danger", "\f071");
 }
 
 kbd {
@@ -343,7 +343,7 @@ sup {
   &::before {
     @extend %rounded;
 
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -467,7 +467,7 @@ main {
       }
     }
 
-    input[type='checkbox'] {
+    input[type="checkbox"] {
       margin: 0 0.5rem 0.2rem -1.3rem;
       vertical-align: middle;
     }
@@ -516,7 +516,7 @@ main {
   background: var(--img-bg);
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     background: var(--shimmer-bg);
     height: 100%;
@@ -678,7 +678,7 @@ mjx-container {
 
 /* --- sidebar layout --- */
 
-$sidebar-display: 'sidebar-display';
+$sidebar-display: "sidebar-display";
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
 
@@ -692,8 +692,10 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
+  // background: var(--sidebar-bg);
+  background: url("/assets/img/Eiffel Tower_2.jpg");
   border-right: 1px solid var(--sidebar-border-color);
+  background-size: cover;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -753,13 +755,17 @@ $btn-mb: 0.5rem;
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
-      color: var(--site-title-color);
+      // color: var(--site-title-color);
+      color: rgba(246, 254, 255, 99%);
+      -webkit-text-stroke: 1px black;
     }
   }
 
   .site-subtitle {
-    font-size: 95%;
-    color: var(--site-subtitle-color);
+    font-size: 1.2rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+    color: rgba(246, 254, 255, 99%);
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
@@ -793,11 +799,16 @@ $btn-mb: 0.5rem;
           font-size: 95%;
           opacity: 0.8;
           margin-right: 1.5rem;
+          -webkit-text-stroke: 1px black;
+          color: rgba(246, 254, 255, 99%);
         }
 
         span {
-          font-size: 90%;
+          font-size: 100%;
           letter-spacing: 0.2px;
+          font-weight: 900;
+          -webkit-text-stroke: 1px black;
+          color: rgba(246, 254, 255, 99%);
         }
       }
 
@@ -871,7 +882,7 @@ $btn-mb: 0.5rem;
       @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
 
       background-color: var(--sidebar-btn-color);
-      content: '';
+      content: "";
       width: $btn-border-width;
       height: $btn-border-width;
       border-radius: 50%;
@@ -929,7 +940,7 @@ $btn-mb: 0.5rem;
     span {
       &:not(:last-child) {
         &::after {
-          content: '›';
+          content: "›";
           padding: 0 0.3rem;
         }
       }
@@ -1036,7 +1047,7 @@ search {
     margin: 0 1.25rem 1rem 0;
 
     &::before {
-      content: '#';
+      content: "#";
       color: var(--text-muted-color);
       padding-right: 0.2rem;
     }
@@ -1229,7 +1240,7 @@ search {
 @media all and (max-width: 576px) {
   main {
     .content {
-      > blockquote[class^='prompt-'] {
+      > blockquote[class^="prompt-"] {
         @include ml-mr(-1rem);
 
         border-radius: 0;
