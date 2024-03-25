@@ -1,7 +1,7 @@
 ---
 title: "트랜잭션 추상화와 동기화를 통한 간편한 트랜잭션 적용"
 date: 2024-02-14 21:10:30 +0900
-categories: [Spring, Transaction]
+categories: [Beckend, Spring]
 tags: [Java, Spring]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "@Transaction - AOP 를 이용해서 트랜잭션 처리하기"
 date: 2024-02-15 23:30:30 +0900
-categories: [Spring, Transaction]
+categories: [Beckend, Spring]
 tags: [Java, Spring]
 ---
 

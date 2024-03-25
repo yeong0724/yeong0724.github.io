@@ -1,7 +1,7 @@
 ---
 title: "트랜잭션 전파(Transaction Propagation)란 무엇일까? - (2)"
 date: 2024-02-18 14:59:30 +0900
-categories: [Spring, Transaction]
+categories: [Beckend, Spring]
 tags: [Java, Spring]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "트랜잭션의 개념 이해"
 date: 2024-02-12 22:25:30 +0900
-categories: [Spring, Transaction]
+categories: [Beckend, Spring]
 tags: [Java, Spring]
 ---
 
