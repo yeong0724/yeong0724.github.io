@@ -1,7 +1,7 @@
 ---
 title: "Sequence Diagram 에 대해서 배우고 작성해보기"
 date: 2024-02-28 23:58:30 +0900
-categories: [Architecture, Development]
+categories: [Project, Development]
 tags: [MSA, Project, spring]
 ---
 
