@@ -5,4 +5,4 @@ categories: [Project, ER-Diagram]
 tags: [MSA, Project, spring]
 ---
 
-![board-erd.drawio.svg](/assets/img/post_img/project/development/board-erd.drawio.svg){: width="600" align="center"}
+![Tea_Project_ERD.svg](/assets/img/post_img/project/development/Tea_Project_ERD.svg){: width="600" align="center"}
